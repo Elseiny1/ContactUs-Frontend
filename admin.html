@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Author" content="تقنية التميز">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>تقـنيـة الـتميـز</h1>
+      <a href="index.html" class="btn">الصفحة الرئيسية</a>
+    </header>
+    
+    <div class="form-container">
+    
+      <!-- فورم إضافة الخدمة -->
+      <form id="serviceForm">
+        <h2>إضافة خدمة جديدة</h2>
+        <div>
+          <label for="serviceName">اسم الخدمة</label>
+          <input type="text" id="serviceName" required>
+        </div>
+        <div>
+          <button type="button" id="addQuestionBtn" class="btn btn-primary">إضافة سؤال</button>
+        </div>
+    
+        <!-- عرض الأسئلة المضافة -->
+        <div id="questionsList"></div>
+        <div style="margin-top:20px">
+          <button type="submit" id="submitButton" class="btn btn-success">حفظ الخدمة</button>
+        </div>
+      </form>
+    
+      <!-- جدول عرض الخدمات -->
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th style="width: 60%;">الخدمة</th>
+            <th style="width: 10%;">تعديل</th>
+            <th style="width: 20%;">حذف</th>
+          </tr>
+        </thead>
+        <tbody id="servicesTable">
+          <tr>
+            <td>خدمة اختبار</td>
+            <td><button class="btn btn-primary">تعديل</button></td>
+            <td><button class="btn btn-danger">حذف</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- جدول عرض العملاء -->
+<h2 class="mt-5">العملاء</h2>
+<table class="table table-striped mt-3" id="clientsTable">
+  <thead>
+    <tr>
+      <th>م</th>
+      <th>اسم العميل</th>
+      <th>رقم الهاتف</th>
+      <th>الإيميل</th>
+      <th>الخدمات</th>
+      <th>الإجابات</th>
+    </tr>
+  </thead>
+  <tbody id="clientsTableBody">
+    <tr>
+      <td>1</td>
+      <td>أحمد محمد</td>
+      <td>01001234567</td>
+      <td>ahmed@example.com</td>
+      <td><button class="btn btn-primary" onclick="showClientServices('أحمد محمد')">الخدمات</button></td>
+      <td><button class="btn btn-primary" onclick="showClientAnswers('أحمد محمد')">الإجابات</button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>منى علي</td>
+      <td>01111222333</td>
+      <td>mona@example.com</td>
+      <td><button class="btn btn-primary" onclick="showClientServices('منى علي')">الخدمات</button></td>
+      <td><button class="btn btn-primary" onclick="showClientAnswers('منى علي')">الإجابات</button></td>
+    </tr>
+  </tbody>
+</table>
+<script src="js/admin.js"></script>
+</body>
+</html>

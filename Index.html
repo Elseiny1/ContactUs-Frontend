@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>تقـنيـة الـتميـز</h1>
+    </header>
+    <section class="info">
+        <h1>مـرحبـا بـك فـي تـقنيـة الـتميـز</h1>
+        <h3>شـاركنـا بـرأيـك</h3>
+        <div class="btn-container">
+            <button class="btn">شـاركنـا بـرأيـك</button>
+            <button class="btn">تـسجيـل دخـول الأدمـن</button>
+        </div>
+    </section>
+    <div class="form-container">
+        <form class="contact" id="form1">
+            <h2>مـعلـومـات المستخدم</h2>
+            <div>
+                <label for="name">الإسـم</label>
+                <input id="name" type="text" autocomplete="off" />
+            </div>
+            <div>
+                <label for="phone">رقـم الـتليفـون</label>
+                <input id="phone" type="number" autocomplete="off" />
+            </div>
+            <div>
+                <label for="email">الـبريـد الإلكتـرونـي</label>
+                <input id="email" type="email" autocomplete="off" />
+            </div>
+            <div>
+                <label for="Service">نـوع الـخدمـة</label>
+                <select id="Service">
+                    <option value="1">خدمـة 1</option>
+                    <option value="2">خدمـة 2</option>
+                    <option value="3">خدمـة 3</option>
+                    <option value="4">خدمـة 4</option>
+                </select>
+            </div>
+            <div class="btn-container">
+                <button class="btn" type="submit">إضـافـة رأيك</button>
+            </div>
+        </form>
+
+        <form class="feedback" id="form2">
+            <h2>إضـافـة رأيـك</h2>
+            <div>
+                <label>ما مستوى رضاك عن الخدمة</label>
+                <div class="Answers">
+                    <div><input name="MCQ" type="radio" value="1" /> <label>غير راضي</label></div>
+                    <div><input name="MCQ" type="radio" value="2" /> <label>لا بأس</label></div>
+                    <div><input name="MCQ" type="radio" value="3" /> <label>راضي</label></div>
+                </div>
+            </div>
+            <div>
+                <label>ما مدى رضاك برموز تعبيرية</label>
+                <div class="Answers">
+                    <div><input name="emj" type="radio" value="1" /> 😡</div>
+                    <div><input name="emj" type="radio" value="2" /> 😐</div>
+                    <div><input name="emj" type="radio" value="3" /> 😍</div>
+                </div>
+            </div>
+            <div>
+                <label>ما هى الأشياء التي يمكن تحسينها</label>
+                <textarea rows="4"></textarea>
+            </div>
+            <div>
+                <label>هل هذه أول تجربة لك على الموقع؟</label>
+                <div class="Answers">
+                    <div><input name="TF" type="radio" value="1" /> <label>نعم</label></div>
+                    <div><input name="TF" type="radio" value="2" /> <label>لا</label></div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn" type="submit">شـاركنـا بـرأيـك</button>
+            </div>
+        </form>
+        <form class="admin-login" id="form3">
+            <h2>تسجيل دخول الأدمن</h2>
+            <div>
+                <label for="admin-user">اسم المستخدم</label>
+                <input id="admin-user" type="text" autocomplete="off" />
+            </div>
+            <div>
+                <label for="admin-pass">كلمة المرور</label>
+                <input id="admin-pass" type="password" autocomplete="off" />
+            </div>
+            <div class="btn-container">
+                <button class="btn" type="submit">تسجيل الدخول</button>
+            </div>
+        </form>
+    </div>
+    <script src="/js/js.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
